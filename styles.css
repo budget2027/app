@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --bleu: #000091;
+  --bleu-fonce: #00006b;
+  --bleu-clair: #6a6af4;
+  --rouge: #E1000F;
+  --blanc: #FFFFFF;
+  --creme: #f2f2f7;
+  --encre: #1b1b3a;
+  --gris-bord: rgba(255,255,255,.22);
+  --ombre: rgba(0,0,10,.35);
+  --radius: 10px;
+  --bar-height: 92px;
+}
+
+*,*::before,*::after{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+
+body{
+  margin:0;
+  font-family:'Public Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bleu);
+  color: var(--blanc);
+  padding-bottom: calc(var(--bar-height) + 18px);
+  -webkit-font-smoothing: antialiased;
+}
+
+a{ color: inherit; }
+
+/* ---------- Header ---------- */
+.site-header{
+  padding: 28px 18px 20px;
+  border-bottom: 1px solid var(--gris-bord);
+}
+.site-header h1{
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 800;
+  margin: 0 0 6px;
+  max-width: 46ch;
+}
+.site-header p.accroche{
+  margin: 0;
+  color: rgba(255,255,255,.78);
+  font-size: .95rem;
+  max-width: 52ch;
+}
+
+/* ---------- Contexte (bloc Lecornu) ---------- */
+.contexte{
+  margin: 18px 18px 0;
+  background: var(--bleu-fonce);
+  border-left: 4px solid var(--rouge);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 16px 16px 14px;
+}
+.contexte h2{
+  font-size: .8rem;
+  text-transform: none;
+  letter-spacing: .01em;
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: rgba(255,255,255,.92);
+}
+.contexte ul{
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+.contexte li{
+  font-size: .88rem;
+  color: rgba(255,255,255,.86);
+  line-height: 1.4;
+}
+
+/* ---------- Chapitres ---------- */
+main{ padding: 20px 18px 12px; display: grid; gap: 14px; }
+
+.chapitre{
+  background: var(--creme);
+  color: var(--encre);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.chapitre-entete{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.chapitre-entete .titre-wrap{ flex: 1; min-width: 0; }
+.chapitre-entete h3{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.chapitre-entete .sous-total{
+  display: block;
+  margin-top: 3px;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #5a5a72;
+}
+.chapitre-entete .sous-total.actif{ color: var(--bleu); }
+.chapitre-entete .chevron{
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  display: grid; place-items: center;
+  transition: transform .2s ease;
+  color: var(--bleu);
+}
+.chapitre[data-ouvert="true"] .chevron{ transform: rotate(180deg); }
+
+.chapitre-notes{
+  margin: 0 16px 10px;
+  padding: 10px 12px;
+  background: #e4e4f4;
+  border-radius: 6px;
+  font-size: .82rem;
+  color: #45455e;
+}
+
+.chapitre-corps{
+  display: grid;
+  gap: 1px;
+  background: #e2e2ec;
+  border-top: 1px solid #e2e2ec;
+}
+.chapitre[data-ouvert="false"] .chapitre-corps,
+.chapitre[data-ouvert="false"] .chapitre-notes{ display: none; }
+
+/* ---------- Mesure (ligne à cocher) ---------- */
+.mesure{
+  background: var(--blanc);
+  padding: 13px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mesure label.case{
+  flex-shrink: 0;
+  position: relative;
+  width: 22px; height: 22px;
+  margin-top: 2px;
+}
+.mesure input[type="checkbox"]{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.mesure .boite{
+  width: 22px; height: 22px;
+  border: 2px solid var(--rouge);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  background: var(--blanc);
+  pointer-events: none;
+}
+.mesure input:checked + .boite{
+  background: var(--rouge);
+}
+.mesure .boite svg{
+  width: 13px; height: 13px;
+  opacity: 0;
+  transform: scale(.6);
+  transition: opacity .12s ease, transform .12s ease;
+}
+.mesure input:checked + .boite svg{ opacity: 1; transform: scale(1); }
+.mesure input:focus-visible + .boite{ outline: 2px solid var(--bleu); outline-offset: 2px; }
+
+.mesure .contenu{ flex: 1; min-width: 0; }
+.mesure .ligne-haut{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.mesure .libelle{
+  font-size: .92rem;
+  line-height: 1.35;
+  font-weight: 500;
+}
+.mesure .note{
+  margin-top: 4px;
+  font-size: .78rem;
+  color: #6b6b82;
+  line-height: 1.3;
+}
+.mesure .bas{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+}
+
+.chip{
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  font-size: .78rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  white-space: nowrap;
+}
+.chip{ color: #3a3a4d; background: #ececf2; border-color: #d9d9e4; }
+.chip .type-libelle{ font-weight: 500; opacity: .8; font-size: .95em; }
+
+.btn-info{
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid #b9b9cf;
+  background: var(--blanc);
+  color: #55556e;
+  display: grid;
+  place-items: center;
+  font-size: .72rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+}
+.btn-info:hover{ border-color: var(--bleu); color: var(--bleu); }
+
+/* ---------- Barre d'action (haut de la liste des chapitres) ---------- */
+.barre-actions{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 18px;
+}
+.btn-reset{
+  background: none;
+  border: none;
+  color: rgba(255,255,255,.75);
+  font-family: inherit;
+  font-size: .82rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 6px 2px;
+}
+.btn-reset:hover{ color: var(--blanc); }
+
+/* ---------- Bandeau sticky bas ---------- */
+.bandeau{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  background: var(--bleu-fonce);
+  border-top: 2px solid var(--rouge);
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  box-shadow: 0 -6px 18px var(--ombre);
+}
+.bandeau-grille{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.15fr;
+  gap: 8px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.bandeau-item{
+  text-align: center;
+  padding: 6px 4px;
+  border-radius: 8px;
+}
+.bandeau-item .label{
+  font-size: .66rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: rgba(255,255,255,.65);
+  margin: 0 0 2px;
+}
+.bandeau-item .valeur{
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.bandeau-item.deficit .valeur{ font-size: 1.15rem; }
+.valeur.bon{ color: #cfe2ff; }
+.valeur.attention{ color: #ffd0d4; }
+.bandeau-item .sous{
+  font-size: .68rem;
+  color: rgba(255,255,255,.6);
+  margin-top: 1px;
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer{
+  margin-top: 28px;
+  padding: 22px 18px 26px;
+  border-top: 1px solid var(--gris-bord);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: .82rem;
+  color: rgba(255,255,255,.7);
+}
+footer.site-footer button, footer.site-footer a{
+  background: none; border: none;
+  font-family: inherit; font-size: inherit;
+  color: rgba(255,255,255,.85);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ---------- Modale (source / mentions légales) ---------- */
+.overlay{
+  position: fixed; inset: 0;
+  background: rgba(0,0,20,.55);
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 100;
+  padding: 0;
+}
+.overlay.ouvert{ display: flex; }
+.modale{
+  background: var(--blanc);
+  color: var(--encre);
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px 16px 0 0;
+  padding: 22px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+  max-height: 78vh;
+  overflow-y: auto;
+}
+.modale h4{
+  margin: 0 0 10px;
+  font-size: 1rem;
+  padding-right: 30px;
+}
+.modale p{ margin: 0 0 8px; font-size: .9rem; line-height: 1.5; color: #33334d; }
+.modale-tete{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.modale-fermer{
+  border: none; background: #eeeef6; color: var(--encre);
+  width: 30px; height: 30px; border-radius: 50%;
+  font-size: 1rem; line-height: 1; cursor: pointer;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px){
+  .modale{ border-radius: 16px; margin-bottom: 40px; }
+  .overlay{ align-items: center; }
+}
+
+@media (min-width: 760px){
+  .site-header, .contexte, main, footer.site-footer{ max-width: 720px; margin-left: auto; margin-right: auto; }
+  main{ padding-left: 0; padding-right: 0; }
+  .contexte{ margin-left: auto; margin-right: auto; }
+  .site-header h1{ font-size: 1.9rem; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  .chevron{ transition: none; }
+}

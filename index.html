@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Un budget 2027 pour la France : tout est possible !</title>
+<meta name="description" content="Simulateur citoyen du budget 2027 : composez vos propres mesures pour atteindre l'objectif de déficit.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Un budget 2027 pour la France : tout est possible !</h1>
+  <p class="accroche">Cochez les mesures que vous retenez, chapitre par chapitre, et suivez en bas de page l'effet de vos choix sur le déficit.</p>
+</header>
+
+<section class="contexte" aria-labelledby="contexte-titre">
+  <h2 id="contexte-titre">Le cadrage fixé par le Premier ministre</h2>
+  <ul id="contexte-liste"></ul>
+</section>
+
+<div class="barre-actions">
+  <button class="btn-reset" id="btn-reset" type="button">Réinitialiser mes choix</button>
+</div>
+
+<main id="chapitres" aria-live="off"></main>
+
+<footer class="site-footer">
+  <button type="button" id="btn-mentions">Mentions légales</button>
+  <button type="button" id="btn-contact">Contact</button>
+</footer>
+
+<div class="bandeau" role="region" aria-label="Résultat de vos choix budgétaires">
+  <div class="bandeau-grille">
+    <div class="bandeau-item">
+      <p class="label">Recettes</p>
+      <p class="valeur" id="val-recettes">0 Mds€</p>
+    </div>
+    <div class="bandeau-item">
+      <p class="label">Dépenses</p>
+      <p class="valeur" id="val-depenses">0 Mds€</p>
+    </div>
+    <div class="bandeau-item deficit">
+      <p class="label">Déficit estimé</p>
+      <p class="valeur" id="val-deficit">6,5 %</p>
+      <p class="sous" id="val-cible">Objectif : 5,0 %</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modale source -->
+<div class="overlay" id="overlay-source">
+  <div class="modale" role="dialog" aria-modal="true" aria-labelledby="source-titre">
+    <div class="modale-tete">
+      <h4 id="source-titre">Source</h4>
+      <button class="modale-fermer" type="button" data-fermer="overlay-source" aria-label="Fermer">&times;</button>
+    </div>
+    <p id="source-texte"></p>
+  </div>
+</div>
+
+<!-- Modale mentions légales -->
+<div class="overlay" id="overlay-mentions">
+  <div class="modale" role="dialog" aria-modal="true" aria-labelledby="mentions-titre">
+    <div class="modale-tete">
+      <h4 id="mentions-titre">Mentions légales</h4>
+      <button class="modale-fermer" type="button" data-fermer="overlay-mentions" aria-label="Fermer">&times;</button>
+    </div>
+    <p>Contenu à compléter.</p>
+  </div>
+</div>
+
+<!-- Modale contact -->
+<div class="overlay" id="overlay-contact">
+  <div class="modale" role="dialog" aria-modal="true" aria-labelledby="contact-titre">
+    <div class="modale-tete">
+      <h4 id="contact-titre">Contact</h4>
+      <button class="modale-fermer" type="button" data-fermer="overlay-contact" aria-label="Fermer">&times;</button>
+    </div>
+    <p>Contenu à compléter.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

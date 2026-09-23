@@ -1,0 +1,433 @@
+{
+  "meta": {
+    "titre_site": "Un budget 2027 pour la France : tout est possible !",
+    "derniere_mise_a_jour": "2026-09-23",
+    "deficit_sans_mesure_pct": 6.5,
+    "deficit_cible_pct": 5.0,
+    "effort_cible_mds": 54,
+    "mds_par_point": 36,
+    "note_methode": "La conversion entre milliards d'euros et points de déficit est dérivée du cadrage du Premier ministre (54 Mds€ d'effort = 1,5 point de déficit, soit environ 36 Mds€ par point). C'est une approximation linéaire, indicative, qui ne remplace pas une prévision macroéconomique détaillée (PIB non pris en compte)."
+  },
+  "contexte": {
+    "titre": "Le cadrage fixé par le Premier ministre Sébastien Lecornu",
+    "items": [
+      "54 Mds€ d'efforts pour revenir à 5 % de déficit",
+      "Sécurité sociale en hausse de 22 Mds€ (vieillissement et précarité)",
+      "Coût de la dette : +10 Mds€",
+      "Dépenses de fonctionnement des collectivités territoriales : +7 Mds€",
+      "Sans mesure nouvelle, le déficit atteindrait 6,5 % du PIB"
+    ]
+  },
+  "chapitres": [
+    {
+      "id": "orientations",
+      "titre": "Orientations déjà annoncées par le gouvernement",
+      "notes": [
+        "Engagement du gouvernement : pas d'augmentation d'impôts (non chiffré)"
+      ],
+      "mesures": [
+        {
+          "id": "orientations-armees",
+          "libelle": "Hausse du budget des Armées",
+          "categorie": "depense",
+          "impact_mds": -6.4,
+          "type_libelle": "Dépense supplémentaire",
+          "source": null
+        },
+        {
+          "id": "orientations-travail",
+          "libelle": "Baisse du budget du ministère du Travail",
+          "categorie": "depense",
+          "impact_mds": 2.5,
+          "type_libelle": "Économie",
+          "source": null
+        },
+        {
+          "id": "orientations-point-indice",
+          "libelle": "Gel du point d'indice des fonctionnaires",
+          "categorie": "depense",
+          "impact_mds": 2,
+          "type_libelle": "Économie",
+          "source": null
+        },
+        {
+          "id": "orientations-arret-maladie",
+          "libelle": "Efforts sur les arrêts maladie",
+          "categorie": "depense",
+          "impact_mds": 2,
+          "type_libelle": "Économie",
+          "source": null
+        },
+        {
+          "id": "orientations-rupture-co",
+          "libelle": "Réforme de la rupture conventionnelle",
+          "categorie": "depense",
+          "impact_mds": 0.1,
+          "type_libelle": "Économie",
+          "source": null,
+          "note": "Valeur retenue : 0,1 Mds€ (1ère année). Atteint 0,8 Mds€ en année pleine, à titre indicatif (non comptabilisé)."
+        },
+        {
+          "id": "orientations-fraude",
+          "libelle": "Lutte contre la fraude fiscale et sociale",
+          "categorie": "recette",
+          "impact_mds": 1,
+          "type_libelle": "Recette nouvelle",
+          "source": null
+        },
+        {
+          "id": "orientations-surtaxe",
+          "libelle": "Réduction de la surtaxe sur les grandes entreprises (de 7,5 à 5 Mds€)",
+          "categorie": "recette",
+          "impact_mds": -2.5,
+          "type_libelle": "Recette en moins",
+          "source": null
+        }
+      ]
+    },
+    {
+      "id": "france",
+      "titre": "Des politiques publiques pour la France",
+      "mesures": [
+        {
+          "id": "france-climat",
+          "libelle": "Lutte contre le changement climatique et adaptation",
+          "categorie": "depense",
+          "impact_mds": -5,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "PS"
+        },
+        {
+          "id": "france-fonds-climat",
+          "libelle": "Création d'un fonds de sécurité dédié au changement climatique",
+          "categorie": "depense",
+          "impact_mds": -5,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "PS"
+        },
+        {
+          "id": "france-ptz",
+          "libelle": "Prêt à taux zéro pour un véhicule électrique et la rénovation du logement",
+          "categorie": "depense",
+          "impact_mds": -2.5,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "PS"
+        },
+        {
+          "id": "france-sante",
+          "libelle": "Renforcer l'accès à la santé de toutes et tous, notamment des jeunes (mutuelle publique jeunes, soutien à l'hôpital, etc.)",
+          "categorie": "depense",
+          "impact_mds": -5,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "PS"
+        },
+        {
+          "id": "france-vss",
+          "libelle": "Financement de la loi intégrale contre les violences sexistes et sexuelles",
+          "categorie": "depense",
+          "impact_mds": -3,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "PS"
+        },
+        {
+          "id": "france-agriculteurs",
+          "libelle": "Plan de soutien aux agriculteurs",
+          "categorie": "depense",
+          "impact_mds": -2,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "PS"
+        },
+        {
+          "id": "france-education",
+          "libelle": "Éducation : garantir 19 élèves maximum par classe dans le premier degré",
+          "categorie": "depense",
+          "impact_mds": -2,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "PS"
+        },
+        {
+          "id": "france-petite-enfance",
+          "libelle": "Plan pour la petite enfance (soutien aux crèches)",
+          "categorie": "depense",
+          "impact_mds": -0.06,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "Gouvernement"
+        },
+        {
+          "id": "france-csg",
+          "libelle": "Baisse d'impôts pour les particuliers via une CSG progressive selon les revenus",
+          "categorie": "recette",
+          "impact_mds": -10,
+          "type_libelle": "Recette en moins",
+          "source": "PS"
+        },
+        {
+          "id": "france-tva-alimentation",
+          "libelle": "Baisse de la TVA sur l'alimentation de 5,5 % à 0 %",
+          "categorie": "recette",
+          "impact_mds": -14,
+          "type_libelle": "Recette en moins",
+          "source": "François Hollande",
+          "note": "En complément d'une TVA dite « sociale », similaire à la proposition du MEDEF"
+        }
+      ]
+    },
+    {
+      "id": "entreprises",
+      "titre": "Des politiques publiques pour les entreprises",
+      "mesures": [
+        {
+          "id": "entreprises-cotisations",
+          "libelle": "Baisse forte des cotisations patronales (TVA dite « sociale »)",
+          "categorie": "recette",
+          "impact_mds": -30,
+          "type_libelle": "Recette en moins",
+          "source": "MEDEF"
+        },
+        {
+          "id": "entreprises-fiscalite-production",
+          "libelle": "Réductions de fiscalité pesant sur les facteurs de production",
+          "categorie": "recette",
+          "impact_mds": -5.6,
+          "type_libelle": "Recette en moins",
+          "source": "MEDEF"
+        },
+        {
+          "id": "entreprises-ia",
+          "libelle": "Soutien à l'adoption rapide de l'IA dans les PME et les collectivités",
+          "categorie": "depense",
+          "impact_mds": -2,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "MEDEF ; Aghion et Bouverot"
+        }
+      ]
+    },
+    {
+      "id": "depenses",
+      "titre": "Réduction des dépenses",
+      "mesures": [
+        {
+          "id": "depenses-apprentissage",
+          "libelle": "Rationaliser et réorienter les aides à l'apprentissage",
+          "categorie": "depense",
+          "impact_mds": 2,
+          "type_libelle": "Économie",
+          "source": null
+        },
+        {
+          "id": "depenses-cir",
+          "libelle": "Cibler pour les PME-ETI et plafonner le crédit impôt recherche",
+          "categorie": "depense",
+          "impact_mds": 3,
+          "type_libelle": "Économie",
+          "source": null
+        },
+        {
+          "id": "depenses-apl-reforme",
+          "libelle": "Réforme et désindexation des APL sur 5 ans",
+          "categorie": "depense",
+          "impact_mds": 0.6,
+          "type_libelle": "Économie",
+          "source": "MEDEF"
+        },
+        {
+          "id": "depenses-associations",
+          "libelle": "Réduire les subventions aux associations au niveau de 2017 ajusté de l'inflation",
+          "categorie": "depense",
+          "impact_mds": 5.7,
+          "type_libelle": "Économie",
+          "source": "MEDEF"
+        },
+        {
+          "id": "depenses-pensions",
+          "libelle": "Gel des pensions de retraite en 2027 (et sous-indexation jusqu'en 2030)",
+          "categorie": "depense",
+          "impact_mds": 4.6,
+          "type_libelle": "Économie",
+          "source": "MEDEF"
+        },
+        {
+          "id": "depenses-collectivites",
+          "libelle": "Baisse du soutien aux collectivités locales",
+          "categorie": "depense",
+          "impact_mds": 6,
+          "type_libelle": "Économie",
+          "source": "IGF"
+        },
+        {
+          "id": "depenses-apl-gel",
+          "libelle": "Gel des APL",
+          "categorie": "depense",
+          "impact_mds": 0.054,
+          "type_libelle": "Économie",
+          "source": "Gouvernement"
+        },
+        {
+          "id": "depenses-ecoles",
+          "libelle": "Supprimer l'obligation de financement égalitaire entre écoles publiques et privées pour les collectivités",
+          "categorie": "depense",
+          "impact_mds": 0.5,
+          "type_libelle": "Économie",
+          "source": null
+        },
+        {
+          "id": "depenses-retraites",
+          "libelle": "Réactiver la réforme des retraites suspendue",
+          "categorie": "depense",
+          "impact_mds": 1.8,
+          "type_libelle": "Économie",
+          "source": "Sébastien Lecornu"
+        },
+        {
+          "id": "depenses-consultations",
+          "libelle": "Fin de la prise en charge par l'Assurance maladie des consultations répétées pour un même motif sans justification médicale",
+          "categorie": "depense",
+          "impact_mds": 0.1,
+          "type_libelle": "Économie",
+          "source": "MEDEF"
+        },
+        {
+          "id": "depenses-fonctionnement-etat",
+          "libelle": "Économies diverses sur le fonctionnement de l'État",
+          "categorie": "depense",
+          "impact_mds": 3.6,
+          "type_libelle": "Économie",
+          "source": "PS"
+        },
+        {
+          "id": "depenses-marges-sante",
+          "libelle": "Régulation des marges sur les dépenses de santé",
+          "categorie": "depense",
+          "impact_mds": 4,
+          "type_libelle": "Économie",
+          "source": "PS"
+        }
+      ]
+    },
+    {
+      "id": "optimisations",
+      "titre": "Optimisations pour augmenter les recettes",
+      "mesures": [
+        {
+          "id": "optimisations-cisap",
+          "libelle": "Réduire les niches fiscales sur l'aide à la personne (dont CISAP)",
+          "categorie": "recette",
+          "impact_mds": 1,
+          "type_libelle": "Recette nouvelle",
+          "source": null
+        },
+        {
+          "id": "optimisations-voitures",
+          "libelle": "Supprimer les exonérations sur les voitures de fonction",
+          "categorie": "recette",
+          "impact_mds": 3,
+          "type_libelle": "Recette nouvelle",
+          "source": "Transport & Environnement"
+        },
+        {
+          "id": "optimisations-niches",
+          "libelle": "Réforme des niches fiscales",
+          "categorie": "recette",
+          "impact_mds": 4,
+          "type_libelle": "Recette nouvelle",
+          "source": "PS"
+        },
+        {
+          "id": "optimisations-fraude",
+          "libelle": "Lutte contre la fraude fiscale et la fraude au travail",
+          "categorie": "recette",
+          "impact_mds": 3.5,
+          "type_libelle": "Recette nouvelle",
+          "source": "PS"
+        },
+        {
+          "id": "optimisations-dutreil",
+          "libelle": "Plafonner à 1 million d'euros les transmissions d'entreprises éligibles au Pacte Dutreil",
+          "categorie": "recette",
+          "impact_mds": 3,
+          "type_libelle": "Recette nouvelle",
+          "source": "Oxfam France"
+        },
+        {
+          "id": "optimisations-aides-entreprises",
+          "libelle": "Réduction de 10 % sur un an des aides diverses aux entreprises",
+          "categorie": "depense",
+          "impact_mds": 1,
+          "type_libelle": "Économie",
+          "source": null,
+          "note": "Le total des aides aux entreprises est estimé entre 112 et 211 Mds€ par an selon les sources"
+        }
+      ]
+    },
+    {
+      "id": "recettes",
+      "titre": "Recettes nouvelles",
+      "mesures": [
+        {
+          "id": "recettes-ttf",
+          "libelle": "Doubler la taxe sur les transactions financières",
+          "categorie": "recette",
+          "impact_mds": 2.8,
+          "type_libelle": "Recette nouvelle",
+          "source": "Alternatives économiques"
+        },
+        {
+          "id": "recettes-flat-tax",
+          "libelle": "Augmenter la flat tax de 3 points",
+          "categorie": "recette",
+          "impact_mds": 1.5,
+          "type_libelle": "Recette nouvelle",
+          "source": null
+        },
+        {
+          "id": "recettes-tva",
+          "libelle": "Hausse de la TVA à 22,3 % (TVA dite « sociale »)",
+          "categorie": "recette",
+          "impact_mds": 30,
+          "type_libelle": "Recette nouvelle",
+          "source": "MEDEF"
+        },
+        {
+          "id": "recettes-avions",
+          "libelle": "Aligner la fiscalité sur les avions sur celle de nos voisins allemands ou néerlandais",
+          "categorie": "recette",
+          "impact_mds": 2,
+          "type_libelle": "Recette nouvelle",
+          "source": null
+        },
+        {
+          "id": "recettes-forfait-ir",
+          "libelle": "Forfait minimal d'impôt sur le revenu (ex. 50 €)",
+          "categorie": "recette",
+          "impact_mds": 1.2,
+          "type_libelle": "Recette nouvelle",
+          "source": "MEDEF"
+        },
+        {
+          "id": "recettes-zucman",
+          "libelle": "Contribution minimale dite « Zucman » de 2 % sur les gros patrimoines",
+          "categorie": "recette",
+          "impact_mds": 15,
+          "type_libelle": "Recette nouvelle",
+          "source": "PS"
+        },
+        {
+          "id": "recettes-gafam",
+          "libelle": "Taxe sur les géants du numérique",
+          "categorie": "recette",
+          "impact_mds": 10,
+          "type_libelle": "Recette nouvelle",
+          "source": "PS"
+        },
+        {
+          "id": "recettes-heritages",
+          "libelle": "Création d'une CSG sur les héritages très élevés",
+          "categorie": "recette",
+          "impact_mds": 10,
+          "type_libelle": "Recette nouvelle",
+          "source": "PS"
+        }
+      ]
+    }
+  ]
+}
