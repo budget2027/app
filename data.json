@@ -12,10 +12,11 @@
     "titre": "Le cadrage fixé par le Premier ministre Sébastien Lecornu",
     "items": [
       "54 Mds€ d'efforts pour revenir à 5 % de déficit",
+      "Sans mesure nouvelle, le déficit atteindrait 6,5 % du PIB",
+      "A noter les informations suivantes :",
       "Sécurité sociale en hausse de 22 Mds€ (vieillissement et précarité)",
-      "Coût de la dette : +10 Mds€",
-      "Dépenses de fonctionnement des collectivités territoriales : +7 Mds€",
-      "Sans mesure nouvelle, le déficit atteindrait 6,5 % du PIB"
+      "Coût de la dette en hausse de 10 Mds€ (taux d'intérêts)",
+      "Dépenses de fonctionnement des collectivités territoriales en hausse de 7 Mds€"
     ]
   },
   "chapitres": [
@@ -32,7 +33,7 @@
           "categorie": "depense",
           "impact_mds": -6.4,
           "type_libelle": "Dépense supplémentaire",
-          "source": null
+          "source": "Sébastien Lecornu"
         },
         {
           "id": "orientations-travail",
@@ -40,7 +41,7 @@
           "categorie": "depense",
           "impact_mds": 2.5,
           "type_libelle": "Économie",
-          "source": null
+          "source": "Sébastien Lecornu"
         },
         {
           "id": "orientations-point-indice",
@@ -48,7 +49,7 @@
           "categorie": "depense",
           "impact_mds": 2,
           "type_libelle": "Économie",
-          "source": null
+          "source": "Sébastien Lecornu"
         },
         {
           "id": "orientations-arret-maladie",
@@ -56,7 +57,7 @@
           "categorie": "depense",
           "impact_mds": 2,
           "type_libelle": "Économie",
-          "source": null
+          "source": "Sébastien Lecornu"
         },
         {
           "id": "orientations-rupture-co",
@@ -64,7 +65,7 @@
           "categorie": "depense",
           "impact_mds": 0.1,
           "type_libelle": "Économie",
-          "source": null,
+          "source": "Sébastien Lecornu",
           "note": "Valeur retenue : 0,1 Mds€ (1ère année). Atteint 0,8 Mds€ en année pleine, à titre indicatif (non comptabilisé)."
         },
         {
@@ -73,7 +74,7 @@
           "categorie": "recette",
           "impact_mds": 1,
           "type_libelle": "Recette nouvelle",
-          "source": null
+          "source": "Sébastien Lecornu"
         },
         {
           "id": "orientations-surtaxe",
@@ -81,7 +82,7 @@
           "categorie": "recette",
           "impact_mds": -2.5,
           "type_libelle": "Recette en moins",
-          "source": null
+          "source": "Sébastien Lecornu"
         }
       ]
     },
@@ -169,6 +170,15 @@
           "type_libelle": "Recette en moins",
           "source": "François Hollande",
           "note": "En complément d'une TVA dite « sociale », similaire à la proposition du MEDEF"
+        },
+        {
+          "id": "france-ordonnance-verte",
+          "libelle": "Instauration de paniers de fruits et légumes bio pour les femmes enceintes pendant 7 mois (projet "ordonnance verte")",
+          "categorie": "depense",
+          "impact_mds": -0.35,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "Les écologistes / Sandra Regol (2024)",
+          "note": "Hypothèse de recours au dispositif annuel d'une femme enceinte sur deux."
         }
       ]
     },
@@ -178,7 +188,7 @@
       "mesures": [
         {
           "id": "entreprises-cotisations",
-          "libelle": "Baisse forte des cotisations patronales (TVA dite « sociale »)",
+          "libelle": "Baisse forte des cotisations patronales (dans le cadre d'une TVA dite « sociale »)",
           "categorie": "recette",
           "impact_mds": -30,
           "type_libelle": "Recette en moins",
@@ -186,7 +196,7 @@
         },
         {
           "id": "entreprises-fiscalite-production",
-          "libelle": "Réductions de fiscalité pesant sur les facteurs de production",
+          "libelle": "Réductions de la fiscalité pesant sur les facteurs de production",
           "categorie": "recette",
           "impact_mds": -5.6,
           "type_libelle": "Recette en moins",
@@ -199,6 +209,14 @@
           "impact_mds": -2,
           "type_libelle": "Dépense supplémentaire",
           "source": "MEDEF ; Aghion et Bouverot"
+        },
+        {
+          "id": "ess-taxe-apprentissage",
+          "libelle": "Rétablissement de l’exonération de la taxe d’apprentissage pour les associations, fondations, mutuelles et autres organismes de l'ESS",
+          "categorie": "depense",
+          "impact_mds": -0.379,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "Union des employeurs de l'économie sociale et solidaire"
         }
       ]
     },
@@ -208,7 +226,7 @@
       "mesures": [
         {
           "id": "depenses-apprentissage",
-          "libelle": "Rationaliser et réorienter les aides à l'apprentissage",
+          "libelle": "Rationalisation et réorientation des aides à l'apprentissage",
           "categorie": "depense",
           "impact_mds": 2,
           "type_libelle": "Économie",
@@ -216,7 +234,7 @@
         },
         {
           "id": "depenses-cir",
-          "libelle": "Cibler pour les PME-ETI et plafonner le crédit impôt recherche",
+          "libelle": "Ciblage sur les PME-ETI et plafonnement du crédit impôt recherche",
           "categorie": "depense",
           "impact_mds": 3,
           "type_libelle": "Économie",
@@ -232,7 +250,7 @@
         },
         {
           "id": "depenses-associations",
-          "libelle": "Réduire les subventions aux associations au niveau de 2017 ajusté de l'inflation",
+          "libelle": "Réduction des subventions aux associations au niveau de 2017 ajusté de l'inflation",
           "categorie": "depense",
           "impact_mds": 5.7,
           "type_libelle": "Économie",
@@ -264,7 +282,7 @@
         },
         {
           "id": "depenses-ecoles",
-          "libelle": "Supprimer l'obligation de financement égalitaire entre écoles publiques et privées pour les collectivités",
+          "libelle": "Suppression de l'obligation de financement paritaire entre écoles publiques et privées pour les collectivités",
           "categorie": "depense",
           "impact_mds": 0.5,
           "type_libelle": "Économie",
@@ -272,7 +290,7 @@
         },
         {
           "id": "depenses-retraites",
-          "libelle": "Réactiver la réforme des retraites suspendue",
+          "libelle": "Réactivation de la réforme des retraites suspendue",
           "categorie": "depense",
           "impact_mds": 1.8,
           "type_libelle": "Économie",
@@ -310,7 +328,7 @@
       "mesures": [
         {
           "id": "optimisations-cisap",
-          "libelle": "Réduire les niches fiscales sur l'aide à la personne (dont CISAP)",
+          "libelle": "Réduction des niches fiscales sur l'aide à la personne (dont CISAP)",
           "categorie": "recette",
           "impact_mds": 1,
           "type_libelle": "Recette nouvelle",
@@ -318,7 +336,7 @@
         },
         {
           "id": "optimisations-voitures",
-          "libelle": "Supprimer les exonérations sur les voitures de fonction",
+          "libelle": "Suppression des exonérations sur les voitures de fonction",
           "categorie": "recette",
           "impact_mds": 3,
           "type_libelle": "Recette nouvelle",
@@ -342,7 +360,7 @@
         },
         {
           "id": "optimisations-dutreil",
-          "libelle": "Plafonner à 1 million d'euros les transmissions d'entreprises éligibles au Pacte Dutreil",
+          "libelle": "Plafonnement à 1 million d'euros les transmissions d'entreprises éligibles au Pacte Dutreil",
           "categorie": "recette",
           "impact_mds": 3,
           "type_libelle": "Recette nouvelle",
@@ -365,7 +383,7 @@
       "mesures": [
         {
           "id": "recettes-ttf",
-          "libelle": "Doubler la taxe sur les transactions financières",
+          "libelle": "Doublement de la taxe sur les transactions financières",
           "categorie": "recette",
           "impact_mds": 2.8,
           "type_libelle": "Recette nouvelle",
@@ -373,7 +391,7 @@
         },
         {
           "id": "recettes-flat-tax",
-          "libelle": "Augmenter la flat tax de 3 points",
+          "libelle": "Augmentation de la flat tax de 3 points",
           "categorie": "recette",
           "impact_mds": 1.5,
           "type_libelle": "Recette nouvelle",
@@ -389,7 +407,7 @@
         },
         {
           "id": "recettes-avions",
-          "libelle": "Aligner la fiscalité sur les avions sur celle de nos voisins allemands ou néerlandais",
+          "libelle": "Alignement de la fiscalité sur les avions sur celle de nos voisins allemands ou néerlandais",
           "categorie": "recette",
           "impact_mds": 2,
           "type_libelle": "Recette nouvelle",
