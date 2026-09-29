@@ -395,7 +395,8 @@
           "categorie": "recette",
           "impact_mds": 1.5,
           "type_libelle": "Recette nouvelle",
-          "source": null
+          "source": null,
+          "note": "De 31.4% à 34.4%"
         },
         {
           "id": "recettes-tva",
