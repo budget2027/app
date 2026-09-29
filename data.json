@@ -173,7 +173,7 @@
         },
         {
           "id": "france-ordonnance-verte",
-          "libelle": "Instauration de paniers de fruits et légumes bio pour les femmes enceintes pendant 7 mois (projet "ordonnance verte")",
+          "libelle": "Instauration de paniers de fruits et légumes bio pour les femmes enceintes pendant 7 mois (projet 'ordonnance verte')",
           "categorie": "depense",
           "impact_mds": -0.35,
           "type_libelle": "Dépense supplémentaire",
