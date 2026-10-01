@@ -24,7 +24,7 @@
       "id": "orientations",
       "titre": "Orientations déjà annoncées par le gouvernement",
       "notes": [
-        "Engagement du gouvernement : pas d'augmentation d'impôts (non chiffré)"
+        "Le projet du PLF 2027 présente 54 Mds € d'efforts dont 43 Mds€ de mesures nouvelles." 
       ],
       "mesures": [
         {
@@ -60,6 +60,22 @@
           "source": "Sébastien Lecornu"
         },
         {
+          "id": "orientations-allocations-famille",
+          "libelle": "Gel des allocations familiales au niveau de 2026",
+          "categorie": "depense",
+          "impact_mds": 0.5,
+          "type_libelle": "Économie",
+          "source": "Projet PLF 2027"
+        },
+        {
+          "id": "orientations-apl",
+          "libelle": "Gel des aides au logement (APL) au niveau de 2026",
+          "categorie": "depense",
+          "impact_mds": 0.5,
+          "type_libelle": "Économie",
+          "source": "Projet PLF 2027"
+        },
+        {
           "id": "orientations-rupture-co",
           "libelle": "Réforme de la rupture conventionnelle",
           "categorie": "depense",
@@ -83,6 +99,56 @@
           "impact_mds": -2.5,
           "type_libelle": "Recette en moins",
           "source": "Sébastien Lecornu"
+        },
+        {
+          "id": "orientations-collectivites",
+          "libelle": "Faire contribuer à hauteur de 5,5 Mds€ les collectivités locales",
+          "categorie": "recette",
+          "impact_mds": 5.5,
+          "type_libelle": "Recette nouvelle",
+          "source": "Projet PLF 2027"
+        },
+        {
+          "id": "orientations-meubles",
+          "libelle": "Rabot des avantages fiscaux dont bénéficie actuellement les meublés touristiques de type Airbnb",
+          "categorie": "recette",
+          "impact_mds": 0.2,
+          "type_libelle": "Recette nouvelle",
+          "source": "Projet PLF 2027"
+        },
+        {
+          "id": "orientations-remboursement-medicaments",
+          "libelle": "Déremboursement de certains médicaments et dispositifs médicaux selon une révision annuelle par la Haute Autorité de Santé",
+          "categorie": "recette",
+          "impact_mds": 2.1,
+          "type_libelle": "Recette nouvelle",
+          "source": "Projet PLF 2027"
+        },
+        {
+          "id": "orientations-allocation-rentree",
+          "libelle": "Réduction de 600 millions d'euros des dépenses consacrées à l'allocation de rentrée scolaire",
+          "categorie": "depense",
+          "impact_mds": 0.6,
+          "type_libelle": "Economie",
+          "source": "Projet PLF 2027"
+        },
+        {
+          "id": "orientations-index-retraites",
+          "libelle": "Sous-indexation des retraites supérieures à 1260 € net",
+          "categorie": "depense",
+          "impact_mds": 4,
+          "type_libelle": "Economie",
+          "source": "Projet PLF 2027",
+          "note": "Les pensions, dont celles supérieures à 1 260 euros, sont actuellement indexées intégralement sur l'inflation."
+        },
+        {
+          "id": "orientations-abattement-retraites",
+          "libelle": "Réduction du plafond des retraites concernées par l'abattement fiscal",
+          "categorie": "depense",
+          "impact_mds": 1.4,
+          "type_libelle": "Economie",
+          "source": "Projet PLF 2027",
+          "note": "Les pensions en-dessous de 4439 € bénéficient actuellement d'un abattement fiscal de 10%. Ce plafond baisserait à 3000€."
         }
       ]
     },
@@ -107,6 +173,15 @@
           "source": "PS"
         },
         {
+          "id": "grande-transition-eelv",
+          "libelle": "Financement de la grande transition climatique (transport, bâti, biodiversité, sécurité civile) par une contribution de 10 Mds€ de la grande transmission",
+          "categorie": "depense",
+          "impact_mds": 0,
+          "type_libelle": "Dépense supplémentaire",
+          "source": "Les écologistes",
+          "note": "'Grande transmission' : plus de 9 000 Mds€ d'héritage vont changer de mains d'ici 2040. Il s'agit d'appliquer une contribution exceptionnelle sur les héritages de plus de 4M€ pour investir directement ces 10 Mds€ pour le climat."
+        },
+        {
           "id": "france-ptz",
           "libelle": "Prêt à taux zéro pour un véhicule électrique et la rénovation du logement",
           "categorie": "depense",
@@ -128,7 +203,8 @@
           "categorie": "depense",
           "impact_mds": -3,
           "type_libelle": "Dépense supplémentaire",
-          "source": "PS"
+          "source": "PS / Les écologistes",
+          "note": "Justice 0,9 Md€ ; Police 0,5Md€ ; Santé 0,4 Md€ ; Education et prévention 0,6 Md€ ; Hébergement 0,6 Md€"
         },
         {
           "id": "france-agriculteurs",
@@ -428,7 +504,7 @@
           "categorie": "recette",
           "impact_mds": 15,
           "type_libelle": "Recette nouvelle",
-          "source": "PS"
+          "source": "PS / Les écologistes / LFI"
         },
         {
           "id": "recettes-gafam",
