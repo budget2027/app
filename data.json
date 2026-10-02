@@ -174,12 +174,12 @@
         },
         {
           "id": "grande-transition-eelv",
-          "libelle": "Financement de la grande transition climatique (transport, bâti, biodiversité, sécurité civile) par une contribution de 10 Mds€ de la grande transmission",
+          "libelle": "Financement de la grande transition climatique (décarbonation des transports, adaptation des bâtiments, biodiversité, sécurité civile)",
           "categorie": "depense",
-          "impact_mds": 0,
+          "impact_mds": -10,
           "type_libelle": "Dépense supplémentaire",
           "source": "Les écologistes",
-          "note": "'Grande transmission' : plus de 9 000 Mds€ d'héritage vont changer de mains d'ici 2040. Il s'agit d'appliquer une contribution exceptionnelle sur les héritages de plus de 4M€ pour investir directement ces 10 Mds€ pour le climat."
+          "note": "En lien avec la recette supplémentaire liée à la 'grande transmission'"
         },
         {
           "id": "france-ptz",
@@ -481,6 +481,15 @@
           "impact_mds": 30,
           "type_libelle": "Recette nouvelle",
           "source": "MEDEF"
+        },
+        {
+          "id": "grande-transmission-eelv",
+          "libelle": "Contribution de 10 Mds€ de la grande transmission (plus de 9 000 Mds€ d'héritage vont changer de mains d'ici 2040)",
+          "categorie": "recette",
+          "impact_mds": 10,
+          "type_libelle": "Recette nouvelle",
+          "source": "Les écologistes",
+          "note": "Mesure en lien avec le financement de la grande transition climatique. Il s'agit d'appliquer une contribution exceptionnelle sur les héritages de plus de 4M€ pour investir directement ces 10 Mds€ pour le climat."
         },
         {
           "id": "recettes-avions",
